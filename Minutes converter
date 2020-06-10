@@ -1,0 +1,32 @@
+ CODE:
+ 
+ package minutes;
+import java.util.Scanner;                        // IMPORTING A NEW JAVA LIBRARY
+
+
+public class Minutes {
+
+    
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);                          // TAKING THE INPUT FROM THE USER
+        System.out.println(" Please Enter the number of Minutes:");
+        int Minutes = input.nextInt();                                    // INPUT TAKEN
+        int year = Minutes/525600;                                       // CONVERSION OF MINUTES INTO YEARS
+        int day = (Minutes/60/24)%365;                                   // COVERSION OF MINUTES INTO DAYS
+        
+        System.out.println(Minutes + " Minutes are  " + year + " years and " + day + " days");       // PRINTING OUT THE OUTPUT
+        
+        
+    }
+    
+}
+
+
+OUTPUT:
+
+Please Enter the number of Minutes:
+ 3456789
+3456789 Minutes are  6 years and 210 days
+
+
+BUILD SUCCESSFUL (total time: 7 seconds)
